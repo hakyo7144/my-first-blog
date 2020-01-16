@@ -118,12 +118,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+# 웹페이지에서 사용될 정적파일 최상위 URL경로
 STATIC_URL = '/static/'
-# 정적파일 최상위 url 경로 
 
+
+#서비스 단계에서 정적파일을 한곳에 모아둔 곳
+# debug가 True이면 작동하지 않는다.
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# debug가 true이면 작동하지 않는다.
 
+#개발 단계에서 정적파일들의 위치
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
