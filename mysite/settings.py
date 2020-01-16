@@ -119,7 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# 정적파일 최상위 url 경로 
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# debug가 true이면 작동하지 않는다.
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
